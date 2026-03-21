@@ -89,7 +89,7 @@ function Dashboard() {
   justifyContent: "center",
   gap: "20px"
 }}>
-  <PieChart students={students} />
+ 
   <LineChart students={students} />
 </div>
 
