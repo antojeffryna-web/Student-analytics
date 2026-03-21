@@ -7,7 +7,7 @@ function Dashboard() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/students")
+    axios.get("https://student-backend-zj46.onrender.com/students")
       .then(res => setStudents(res.data))
       .catch(err => console.error(err));
   }, []);
