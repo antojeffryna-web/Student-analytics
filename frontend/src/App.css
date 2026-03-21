@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

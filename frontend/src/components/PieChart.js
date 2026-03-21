@@ -6,10 +6,15 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 function PieChart({ students }) {
   const safe = students.filter(s => s.status === "Safe").length;
   const risk = students.filter(s => s.status === "At Risk").length;
+  const options = {
+  responsive: true,
+  maintainAspectRatio: false
+};
 
   const data = {
     labels: ["Safe", "At Risk"],
     datasets: [
+      
   {
     data: [safe, risk],
     backgroundColor: ["#4CAF50", "#FF5252"], // green & red
@@ -18,7 +23,11 @@ function PieChart({ students }) {
 ]
   };
 
-  return <Pie data={data} />;
+  return (
+  <div style={{ width: "100%", maxWidth: "400px", height: "300px" }}>
+    <Pie data={data} options={options} />
+  </div>
+);
 }
 
 export default PieChart;

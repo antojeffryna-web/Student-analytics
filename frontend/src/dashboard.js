@@ -33,6 +33,8 @@ function Dashboard() {
         alignItems: "center",
         marginTop: "30px"
       }}
+
+      
     >
       <div
         style={{
@@ -72,6 +74,26 @@ function Dashboard() {
     </div>
 
     <h2 style={{ marginTop: "30px" }}>Student Status</h2>
+
+    <div style={{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  gap: "20px"
+}}>
+
+
+  <div style={{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  gap: "20px"
+}}>
+  <PieChart students={students} />
+  <LineChart students={students} />
+</div>
+
+</div>
 
     <div
       style={{
