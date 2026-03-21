@@ -22,7 +22,7 @@ function LineChart({ students }) {
       tension: 0.3
     }))
   };
-
+<div style={{ width: "100%", height: "300px" }}></div>
   return <Line data={data} />;
 }
 

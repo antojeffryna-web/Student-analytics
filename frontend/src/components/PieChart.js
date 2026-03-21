@@ -23,11 +23,12 @@ function PieChart({ students }) {
 ]
   };
 
-  return (
-  <div style={{ width: "100%", maxWidth: "400px", height: "300px" }}>
+
+}
+return (
+  <div style={{ width: "100%", height: "300px" }}>
     <Pie data={data} options={options} />
   </div>
 );
-}
 
 export default PieChart;
